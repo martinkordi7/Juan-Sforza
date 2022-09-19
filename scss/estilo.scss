@@ -1,0 +1,226 @@
+@import "bg";
+@import "fonts";
+
+nav{
+.whap { 
+    position: fixed;
+    right: 7%;
+    height: 40px;
+}
+.perfil{
+    position: fixed;
+    right: 10%;
+    height: 40px;
+}
+
+ .logo{
+    font-size: 60px;
+    margin-right: 30px;}
+    
+    .container-fluid{
+      margin-top: 80px;
+    }
+    
+}
+
+header{
+    .menu{ list-style: none;
+
+        margin: auto;
+        background-color:white;
+        padding: 0%;
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px; }
+        .menuinicio{
+            text-decoration: none;
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+background-color: $bg-color-negro;
+        }
+        .menuinicio a{
+            text-decoration: none;
+            color: white;
+          }
+}
+.accesorios{ color: black;
+    margin-top: 100px;
+  margin-left: 30px;}
+ .containerlistas{display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 20%;
+  border: solid black;
+  border-radius: 1rem;
+  margin-top: 30px;
+  margin-left: 40px;
+  padding: 30px;
+
+    .listacces{
+        color: $color-ng;
+        border-color: black;
+       list-style: none;
+       font-size: 20px;
+       text-decoration: none;
+      }
+    }
+ 
+ .imgnavbar{
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  
+  gap: 50px;
+  padding-top: 80px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  .img1{
+    border-radius: 10px;
+    width: 60%;
+    }
+    .imgnav:hover{
+      margin-top: 30px;
+     transform:scale(1.4) ;
+     }
+  }
+  /* footer*/
+  .menuderegistro{
+    color: white;
+    background-color: #3c3c3c;
+    margin-top: 100px;
+  
+  .registro{
+    font-size:30px;
+  }
+  .subregistro{
+    font-size: 15px;
+  }
+  .emailregistro{
+    height: 30px;
+    padding-right: 50px;
+    margin-left: 40%;
+    border-radius: 5px;
+    }
+  }
+  .pie-pagina{
+    width: 100%;
+    background-color: #3c3c3c;
+  }
+  
+  .logo-footer{
+    font-size: 50px;
+    margin-top: 50px;
+    color: black;
+    font-family: serif;
+  }
+  .pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .pie-pagina .grupo1 .box p{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .pie-pagina .grupo1 .red {
+    
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+/*bootstrap*/
+.container-fluid{
+  position: fixed;
+  padding-left: 300px;
+  background-color: $bg-color-blanco;
+  right: 7%;
+
+.navbar-brand{
+  color: $color-ng;
+}
+.nav-link {
+  color: $color-ng;
+}
+.nav-link{
+  color: $color-ng;
+}
+
+}
+/*media queries*/
+@media screen and (max-width: 768px){
+  .whap{ 
+    right: 11%;
+  }
+  .perfil{
+    right: 15%;
+  }
+  .logo{
+    padding-left: 70px;
+  }
+  .accesorios{font-size: 30px;}
+  .containerlistas{
+    margin-left: 20px;
+    width: 22%;
+  }
+  .imgnavbar{
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media screen and (max-width: 480px)
+{
+  .whap{
+right: 7%;
+  }
+  .perfil{
+    right: 12%;
+  }
+  .logo{
+    margin-top: 50px;
+  }
+  .logo{
+    font-size: 50px;
+    right: 6%;
+  }
+  .containerlistas{
+    width: 35%;
+  }
+  .imgnavbar{
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .emailregistro{
+    margin-left: 30%;
+  }
+}
+
+
+
